@@ -1,7 +1,7 @@
 /*
 ** 객체의 속성에 각각의 property가 있는지 체크 후에 값을 할당하고 있다. 
 */
-function printProfile2(obj) {
+function printProfile2(obj : any) {
     let name = "";
     let nation = "";
     name = obj.name ? "none" : obj.name;
@@ -131,7 +131,7 @@ const e1 = superPrint2([1,2, true, "a"])
 //typescript에 함수의 첫번째 파라메터로 배열이 올거라고 말하고
 //M은 두번째 파라메터로 온다는 뜻
 type SuperPrint3 = <T, M>(a:T[], b:M) => T
-const superPrint3 : SuperPrint = (a) => a[0]
+const superPrint3 : SuperPrint3 = (a) => a[0]
 
 //실제 사용예제
 const a2 = superPrint3([1,2,3,4], "x")
