@@ -5,7 +5,7 @@
     "target": "ES6",
     "sourceMap": true,
     "experimentalDecorators": true,
-    "outDir": "./js/",
+    "outDir": "./js/", //javascript가 생길 위치
     "watch": true
   },
   "moduleResolution": "node",
